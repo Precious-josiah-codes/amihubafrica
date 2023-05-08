@@ -15,7 +15,7 @@ import "./styles.css";
 import { Autoplay, Pagination, Navigation } from "swiper";
 
 import Airsyn from "./components/hero/Airsyn";
-import OkuPower from "./components/hero/OkuPower";
+import OkuPower from "./components/hero/Okupower";
 import Proxie from "./components/hero/Proxie";
 import WhatWeDo from "./components/hero/whatwedo/WhatWeDo";
 
