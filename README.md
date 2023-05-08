@@ -43,8 +43,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
   //   "lint": "next lint"
   // }, -->
 
-  <!-- "scripts": {
+  "scripts": {
   "dev": "node server.js",
   "build": "next build",
   "start": "NODE_ENV=production node server.js"
-} -->
+}
