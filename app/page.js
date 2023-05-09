@@ -61,14 +61,25 @@ export default function Home() {
       <nav className="flex items-center justify-between w-full py-6 px-6 lg:px-[5rem] sticky top-0 z-[999] bg-[#F0EFEF]">
         {/* logo */}
         <h1 className="font-bold">
-          <Image src="/logo.svg" alt="Logo" width={200} height={98} priority />
-          <h2>Developing Africas Technology Solution</h2>
+          <Image src="/logo.svg" alt="Logo" width={200} height={90} priority />
+          <h2 className="-mt-4 text-blue-900 leading-4">
+            Developing Africas Technology Solution
+          </h2>
         </h1>
 
         {/* links */}
-        <div className="flex justify-end w-[20rem] text-black">
-          {/* <span>Home</span> */}
-          <span class="relative inline-block" ref={dropdownRef}>
+        <div className="flex justify-end sm:justify-between w-[20rem] text-black">
+          <span>
+            <a
+              href="http://tronix.africa/AirSyn.html"
+              className="hidden sm:block px-4 py-2 text-gray-800 hover:text-[#377EAF]"
+            >
+              Airsyn
+            </a>
+          </span>
+
+          {/* // for mobile */}
+          <span class="sm:hidden relative inline-block" ref={dropdownRef}>
             <span
               onClick={toggleMenu}
               className="hover:text-[#377EAF]  focus:border focus:border-b-2 cursor-pointer active:text-[#377EAF]"
@@ -105,7 +116,22 @@ export default function Home() {
             )}
           </span>
 
-          {/* <span>Contact</span> */}
+          <span>
+            <a
+              href="https://okupower.amihub.africa/"
+              className="hidden sm:block px-4 py-2 text-gray-800 hover:text-[#377EAF]"
+            >
+              OkuPower
+            </a>
+          </span>
+          <span>
+            <a
+              href="https://proxie.amihub.africa/"
+              className="hidden sm:block px-4 py-2 text-gray-800 hover:text-[#377EAF]"
+            >
+              Proxie
+            </a>
+          </span>
         </div>
 
         {/* hamburger menu */}
@@ -793,7 +819,7 @@ export default function Home() {
 
       {/* start footer */}
       {/* NOTE: When ready reset the height back to h-[24rem] sm:h-[25rem] */}
-      <footer className="bg-[#EBE9E9] px-6 lg:px-[5rem] h-[24rem] sm:h-[10rem] flex flex-col justify-between py-[4rem] ">
+      <footer className="bg-[#EBE9E9] px-6 lg:px-[5rem] h-[30rem] sm:h-[15rem] flex flex-col justify-between py-[4rem] ">
         {/* first section */}
         {/* NOTE: When ready remove hidden  */}
         <div className="sm:hidden flex flex-col sm:flex-row justify-between items-center sm:items-start">
@@ -837,7 +863,7 @@ export default function Home() {
         </div>
 
         {/* second section */}
-        <div className="flex space-y-2 justify-center sm:justify-between sm:border-t border-[#515151] pt-6 pb-6">
+        <div className="flex flex-col sm:flex-row items-center space-y-2 justify-center sm:justify-between sm:border-t border-[#515151] pt-6 pb-6">
           <div className="text-[#377EAF] hidden sm:flex items-center space-x-3">
             <div className="border border-[#377EAF] rounded-full w-5 h-5 flex items-center justify-center p-2">
               C
@@ -895,8 +921,10 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="hidden sm:flex text-[#AF4FA2]">
-            Check our more of our products
+          <div className="flex text-[#377EAF] sm:text-left text-center mt-[3rem] sm:mt-0">
+            Call Us: +234-808-422-2220 <br />| Email Us: hi@amihub.africa <br />{" "}
+            Address: #9 Rumuogba Estate Road, GRA III, <br /> Port Harcourt,
+            Rivers State
           </div>
         </div>
       </footer>

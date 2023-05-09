@@ -21,7 +21,7 @@ const Amihub = () => {
         <section className="w-full sm:w-[50rem] flex items-center justify-center ">
           <div className="relative h-[15rem] w-[95%] sm:h-[30rem] sm:w-[95%] text-center flex justify-between rotate-[-32.31deg] sm:rotate-[-52.31deg] ">
             {/* first image */}
-            <div className="h-[136.92px] w-[ 81.58px] sm:h-[280.07px] sm:w-[177.46px] bg-yellow-700 rounded-[150px]  overflow-hidden self-start">
+            <div className="h-[145.92px] w-[81.58px] sm:h-[280.07px] sm:w-[177.46px] bg-yellow-700 rounded-[150px]  overflow-hidden self-start">
               <Image
               src="https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=600"
               alt="Girl"
