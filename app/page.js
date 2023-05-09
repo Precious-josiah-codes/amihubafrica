@@ -87,7 +87,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    href="http://OkuPower.amihub.africa"
+                    href="https://okupower.netlify.app/"
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
                   >
                     OkuPower

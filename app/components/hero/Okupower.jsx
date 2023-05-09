@@ -13,7 +13,7 @@ const Okupower = () => {
            OkuPower is a digital prepaid power meter that measures the amount of electricity consumed by a facility. The product is designed to work in real-time showing the amount of power being consumed by the facility at the moment, showing the duration the current meter units will carry, while making meter readings to be visible via a mobile device.
           </p>
         
-          <a className="w-fit py-4 px-6 mt-6 border border-[#377EAF] text-[#377EAF] rounded-md" href="http://okupower.amihub.africa">
+          <a className="w-fit py-4 px-6 mt-6 border border-[#377EAF] text-[#377EAF] rounded-md" href="https://okupower.netlify.app/">
             Learn More
           </a>
         </section>
