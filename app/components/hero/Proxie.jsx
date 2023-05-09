@@ -16,9 +16,9 @@ const Proxie = () => {
           <p className="mt-6 hidden sm:flex">
             This device offers a unique solution by enabling users to extend the coverage range of their Wi-Fi network, ensuring a reliable and stable connection throughout their living or working space.
           </p>
-          <button className="w-fit py-4 px-6 mt-6 border border-[#377EAF] text-[#377EAF] rounded-md">
+          <a href="https://proxie.amihub.africa/" className="w-fit py-4 px-6 mt-6 border border-[#377EAF] text-[#377EAF] rounded-md">
             Learn More
-          </button>
+          </a>
         </section>
 
         {/* right section */}
