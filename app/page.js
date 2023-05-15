@@ -266,7 +266,7 @@ export default function Home() {
                 provides a range of top quality brands, products and services.
               </li>
               <li className="list-disc">
-                impacting every aspect of the manufacturing business; from
+                Impacting every aspect of the manufacturing business; from
                 design, research and development, production, supply chain and
                 logistics management through to sales, marketing and even end of
                 life management.
@@ -923,8 +923,8 @@ export default function Home() {
           </div>
           <div className="flex text-[#377EAF] sm:text-left text-center mt-[3rem] sm:mt-0">
             Call Us: +234-808-422-2220 <br />| Email Us: hi@amihub.africa <br />{" "}
-            Address: #9 Rumuogba Estate Road, GRA III, <br /> Port Harcourt,
-            Rivers State
+            Address: No. 9 Rumuogna Road, Rumuogba Estate, <br /> Port Harcourt,
+            Nigeria
           </div>
         </div>
       </footer>

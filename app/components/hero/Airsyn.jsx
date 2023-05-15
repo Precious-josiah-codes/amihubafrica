@@ -6,11 +6,14 @@ const Airsyn = () => {
         {/* left section */}
         <section className="h-full w-full sm:w-[40rem] flex flex-col justify-center ">
           <h1 className="text-4xl capitalize mt-3 w-[20rem] sm:w-[25rem] leading-[3rem]">
-          <div className="text-2xl">Tronix</div>
-           <Image src="https://res.cloudinary.com/dszhzezvt/image/upload/v1683565437/amihub/airsyn_logo_x2tuco.png" alt="Logo" width={130} height={98} priority />  <div className=" text-base ">incubated by AMIHUB</div>
+          <a href="http://tronix.africa/AirSyn.html">
+              <div className="text-2xl">Tronix</div>
+              <Image src="https://res.cloudinary.com/dszhzezvt/image/upload/v1683565437/amihub/airsyn_logo_x2tuco.png" alt="Logo" width={130} height={98} priority />  
+          </a>
+          <div className="text-base">incubated by AMIHUB</div>
           </h1>
           <p className="mt-6">
-           This safety device is a groundbreaking innovation that offers real-time measurement of pollutant levels in the surrounding air. By utilizing advanced sensors and algorithms, it accurately detects various pollutants using UN/WHO standards. 
+          This safety device is a groundbreaking innovation that offers real-time measurement of pollutant levels in the surrounding air. By utilizing advanced sensors and algorithms, it accurately detects various pollutants using UN/WHO standards. 
           </p>
           <p className="mt-6 hidden sm:flex">
             With this device, individuals can make informed decisions to protect their health and take necessary actions to mitigate the impact of pollutants on their surroundings.
@@ -23,6 +26,7 @@ const Airsyn = () => {
         {/* right section */}
         <section className=" w-full sm:w-[50rem] flex items-center justify-center ">
           <div className="relative h-[30rem] w-[95%] text-center flex justify-between ">
+            <a href="http://tronix.africa/AirSyn.html">
             <Image
             src="https://res.cloudinary.com/dszhzezvt/image/upload/v1683565089/amihub/airsyn-mockup_lwckww.png"
             alt="Girl"
@@ -39,6 +43,7 @@ const Airsyn = () => {
             height={350}
             priority
           />
+            </a>
           </div>
         </section>
       </section>

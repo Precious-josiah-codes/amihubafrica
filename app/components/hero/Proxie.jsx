@@ -7,8 +7,11 @@ const Proxie = () => {
         <section className="h-full w-full sm:w-[40rem] flex flex-col justify-center ">
 
           <h1 className="text-4xl capitalize mt-3 w-[20rem] sm:w-[25rem] leading-[3rem]">
-            <div className="text-2xl">Tronix</div>
-             <Image src="https://res.cloudinary.com/dszhzezvt/image/upload/v1683565470/amihub/prxie_1_nfhvvv.png" alt="Logo" width={130} height={98} priority />  <div className=" text-base ">incubated by AMIHUB</div>
+            <a href="https://proxie.amihub.africa/">
+              <div className="text-2xl">Tronix</div>
+             <Image src="https://res.cloudinary.com/dszhzezvt/image/upload/v1683565470/amihub/prxie_1_nfhvvv.png" alt="Logo" width={130} height={98} priority /> 
+            </a>
+             <div className=" text-base ">incubated by AMIHUB</div>
           </h1>
           <p className="mt-6">
             Proxie is an innovative IoT enabled smart socket that enable users to extend the coverage range of their Wi-Fi network hotspot, as well as switch on and off appliances connected to it remotely.
@@ -22,8 +25,8 @@ const Proxie = () => {
         </section>
 
         {/* right section */}
-        <section className=" w-full sm:w-[50rem] flex items-center justify-center">
-         
+        <section className=" w-full sm:w-[40rem] flex items-center justify-center">
+         <a href="https://proxie.amihub.africa/" className="w-full sm:w-[40rem] ">
              <Image
             src="https://res.cloudinary.com/dszhzezvt/image/upload/v1683565755/amihub/proxie_image_hpdn6r.png"
             alt="Girl"
@@ -40,6 +43,8 @@ const Proxie = () => {
             height={270}
             priority
           />
+
+         </a>
         </section>
       </section>
      );
