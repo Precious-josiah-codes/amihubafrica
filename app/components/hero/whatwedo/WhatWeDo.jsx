@@ -21,22 +21,22 @@ const WhatWeDo = ({isMobile}) => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <Cards icon='./productlife.svg' title='Product Life'/>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Cards icon='./production.svg' title='Production'/>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Cards icon='./commercialization.svg' title='Commercialiazation'/>
-          </SwiperSlide>
-          <SwiperSlide>
             <Cards icon='./rd.svg' title='R&D'/>
           </SwiperSlide>
           <SwiperSlide>
             <Cards icon='./productdesign.svg' title='Product Design'/>
           </SwiperSlide>
           <SwiperSlide>
+            <Cards icon='./production.svg' title='Production'/>
+          </SwiperSlide>
+          <SwiperSlide>
             <Cards icon='./supplychain.svg' title='Supply CHain'/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Cards icon='./productlife.svg' title='Product Life'/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Cards icon='./commercialization.svg' title='Commercialiazation'/>
           </SwiperSlide>
           <SwiperSlide>
             <Cards icon='./ideation.svg' title='Ideation'/>
