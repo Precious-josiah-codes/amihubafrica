@@ -18,6 +18,7 @@ import Airsyn from "./components/hero/Airsyn";
 import OkuPower from "./components/hero/Okupower";
 import Proxie from "./components/hero/Proxie";
 import WhatWeDo from "./components/hero/whatwedo/WhatWeDo";
+import Team from "./components/hero/Team";
 
 export default function Home() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -26,6 +27,81 @@ export default function Home() {
 
   const progressCircle = useRef(null);
   const progressContent = useRef(null);
+
+  const teams = [
+    {
+      name: "Jimmy Bomo Okoroh",
+      position: "CEO",
+      image:
+        "https://res.cloudinary.com/dszhzezvt/image/upload/v1685109487/Team/jimmy_xdfrzc.png",
+    },
+    {
+      name: "gideon jonathan ",
+      position: "CTO",
+      image:
+        "https://res.cloudinary.com/dszhzezvt/image/upload/v1685109487/Team/gideon_hmazx5.png",
+    },
+    {
+      name: "Owhor Sandra Nyekachi",
+      position: "Admin/Business Development Analyst",
+      image:
+        "https://res.cloudinary.com/dszhzezvt/image/upload/v1685109487/Team/sandra_p9fcyl.png",
+    },
+    {
+      name: "eunice ebelike ",
+      position: "product designer",
+      image:
+        "https://res.cloudinary.com/dszhzezvt/image/upload/v1685110685/Team/eunice_s1sghm.png",
+    },
+    {
+      name: "Chuku Success Chisom",
+      position: "software engineer",
+      image:
+        "https://res.cloudinary.com/dszhzezvt/image/upload/v1685110682/Team/success_qjfwhg.png",
+    },
+    {
+      name: "Sunny-Ade boma . F .",
+      position: "intern",
+      image:
+        "https://res.cloudinary.com/dszhzezvt/image/upload/v1685110684/Team/boma_nuwbje.png",
+    },
+    {
+      name: "precious josiah",
+      position: "lead software engineer",
+      image:
+        "https://res.cloudinary.com/dszhzezvt/image/upload/v1685110683/Team/precious_cmsgzp.png",
+    },
+    {
+      name: "Bridget Dinebari Beebe",
+      position: "embedded/iot engineer",
+      image:
+        "https://res.cloudinary.com/dszhzezvt/image/upload/v1685110686/Team/bridget_h4w628.png",
+    },
+    {
+      name: "gonee ledor joy",
+      position: "janitor",
+      image:
+        "https://res.cloudinary.com/dszhzezvt/image/upload/v1685110683/Team/joy_wicdp4.png",
+    },
+    {
+      name: "benjamin .c. ochia",
+      position: "brand identity designer",
+      image:
+        "https://res.cloudinary.com/dszhzezvt/image/upload/v1685110682/Team/benjamin_vx4yvu.png",
+    },
+    {
+      name: "Okia Favour Ugochukwu",
+      position: "lead embedded/iot engineer",
+      image:
+        "https://res.cloudinary.com/dszhzezvt/image/upload/v1685110686/Team/favour_n7q5mo.png",
+    },
+    {
+      name: "julius .p. aseimegha",
+      position: "facility manager",
+      image:
+        "https://res.cloudinary.com/dszhzezvt/image/upload/v1685110682/Team/julius_kfoxo1.png",
+    },
+  ];
   const onAutoplayTimeLeft = (s, time, progress) => {
     progressCircle.current.style.setProperty("--progress", 1 - progress);
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
@@ -816,6 +892,21 @@ export default function Home() {
         <WhatWeDo isMobile={isMobile} />
       </section>
       {/* end what we do */}
+
+      {/* start team */}
+      <section className="bg-[#EBE9E9] h-[680vh] sm:h-[220vh] px-6 lg:px-[5rem]">
+        <h1 className="text-4xl text-[#377EAF] py-9">Meet The Team</h1>
+        <div className="grid  sm:grid-cols-4 gap-y-6">
+          {teams.map((team) => (
+            <Team
+              name={team.name}
+              position={team.position}
+              image={team.image}
+            />
+          ))}
+        </div>
+      </section>
+      {/* end team */}
 
       {/* start footer */}
       {/* NOTE: When ready reset the height back to h-[24rem] sm:h-[25rem] */}
