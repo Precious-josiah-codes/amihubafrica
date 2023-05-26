@@ -897,8 +897,9 @@ export default function Home() {
       <section className="bg-[#EBE9E9] h-[680vh] sm:h-[220vh] px-6 lg:px-[5rem]">
         <h1 className="text-4xl text-[#377EAF] py-9">Meet The Team</h1>
         <div className="grid  sm:grid-cols-4 gap-y-6">
-          {teams.map((team) => (
+          {teams.map((team, index) => (
             <Team
+              key={index}
               name={team.name}
               position={team.position}
               image={team.image}
