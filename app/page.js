@@ -78,6 +78,12 @@ export default function Home() {
         "https://res.cloudinary.com/dszhzezvt/image/upload/v1685110686/Team/bridget_h4w628.png",
     },
     {
+      name: "Victor Isaac Ibani",
+      position: "Software Engineer",
+      image:
+        "https://res.cloudinary.com/dszhzezvt/image/upload/v1685110682/Team/victor_ovtawm.png",
+    },
+    {
       name: "gonee ledor joy",
       position: "janitor",
       image:
@@ -894,9 +900,9 @@ export default function Home() {
       {/* end what we do */}
 
       {/* start team */}
-      <section className="bg-[#EBE9E9] h-[680vh] sm:h-[220vh] px-6 lg:px-[5rem]">
+      <section className="bg-[#EBE9E9] h-[740vh] sm:h-[280vh] px-6 lg:px-[5rem]">
         <h1 className="text-4xl text-[#377EAF] py-9">Meet The Team</h1>
-        <div className="grid  sm:grid-cols-4 gap-y-6">
+        <div className="grid sm:grid-cols-4 gap-y-6">
           {teams.map((team, index) => (
             <Team
               key={index}

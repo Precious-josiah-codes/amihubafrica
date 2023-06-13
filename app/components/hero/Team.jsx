@@ -4,11 +4,11 @@ const Team = ({name, position, image}) => {
     return ( 
         <div className="text-center w-[18rem]">
             {/* image container */}
-            <div className="h-[20rem] w-full pt-9 rounded-tl-[5rem] rounded-tr-[5rem] bg-[#377EAF] mb-5">
+            <div className="h-[20rem] w-full pt-9 rounded-tl-[5rem] rounded-tr-[5rem] bg-[#377EAF] mb-5 ">
                 <Image
                 src={image}
                 alt={name}
-                className="object-contain h-full w-full"
+                className="object-cover h-full w-full"
                 width={160}
                 height={160}
                 priority
