@@ -19,6 +19,9 @@ import OkuPower from "./components/hero/Okupower";
 import Proxie from "./components/hero/Proxie";
 import WhatWeDo from "./components/hero/whatwedo/WhatWeDo";
 import Team from "./components/hero/Team";
+import MmiriMeter from "./components/hero/MmiriMeter";
+import PowerAjiya from "./components/hero/PowerAjiya";
+import GazMeter from "./components/hero/GazMeter";
 
 export default function Home() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -264,6 +267,15 @@ export default function Home() {
         </SwiperSlide>
         <SwiperSlide>
           <Proxie />
+        </SwiperSlide>
+        <SwiperSlide>
+          <MmiriMeter />
+        </SwiperSlide>
+        <SwiperSlide>
+          <PowerAjiya />
+        </SwiperSlide>
+        <SwiperSlide>
+          <GazMeter />
         </SwiperSlide>
         <div className="autoplay-progress" slot="container-end">
           <svg viewBox="0 0 48 48" ref={progressCircle}>
@@ -742,6 +754,219 @@ export default function Home() {
         </section>
       </section>
       {/* end OkuPower */}
+
+      {/* start mmiri meter */}
+      <section className="flex items-center justify-between px-6 py-9 lg:px-[5rem] sm:space-x-9">
+        {/* left section */}
+        <section className="w-full sm:w-[40rem]">
+          {/* first section */}
+          <div className="flex items-center space-x-6 mb-10">
+            <div className="w-[5rem] sm:w-[10rem] h-fit bg-green-300 flex relative">
+              <h1 className="absolute -top-6">Tronix</h1>
+              <Image
+                src="./line1.svg"
+                alt="Line"
+                className="object-cover h-[3px] w-full "
+                width={100}
+                height={3}
+                priority
+              />
+            </div>
+            <h1 className="text-4xl text-[#D20202] font-bold">Mmiri Meter</h1>
+          </div>
+
+          {/* second section */}
+          <p className="mb-5">
+            Mmiri Meter is a smart water meter that is developed to monitor,
+            collect and make water flow data readily to accessible for consumers
+            via the users mobile devices.
+          </p>
+          {/* mmiri image */}
+          <section className="sm:hidden flex-1 h-[20rem] border border-gray-500 mb-5">
+            <Image
+              src="https://res.cloudinary.com/dszhzezvt/image/upload/v1689007872/amihub/MMIRI_kaxvus.png"
+              alt="mmiri Logo"
+              className="object-contain h-full w-full "
+              width={1260}
+              height={186}
+              priority
+            />
+          </section>
+          {/* why */}
+          <h1 className="mt-10 pb-3 font-bold">Why Mmiri Meter</h1>
+          <div>
+            <div>• Accurate.</div>
+            <div>• Durable.</div>
+            <div>• User-friendly.</div>
+          </div>
+          {/* product features */}
+          <h1 className="mt-10 pb-3 font-bold">Product Features</h1>
+          <div className="sm:flex  sm:space-x-6 space-y-6 sm:space-y-0">
+            <div>
+              <div>• Monitor water consumption.</div>
+              <div>• Hassle free water management.</div>
+              <div>• Simply load credit.</div>
+            </div>
+          </div>
+        </section>
+
+        {/* right section */}
+        <section className="flex-1 h-[40rem] border border-gray-900">
+          <Image
+            src="https://res.cloudinary.com/dszhzezvt/image/upload/v1689007872/amihub/MMIRI_kaxvus.png"
+            alt="Proxie Logo"
+            className="object-contain h-full w-full"
+            width={1260}
+            height={186}
+            priority
+          />
+        </section>
+      </section>
+      {/* end mmiri meter */}
+
+      {/* start Power Ajiya */}
+      <section className="flex items-center justify-between px-6 py-9 lg:px-[5rem] sm:space-x-9">
+        {/* left section */}
+        <section className="flex-1 h-[40rem] bg-white">
+          <Image
+            src="https://res.cloudinary.com/dszhzezvt/image/upload/v1689007877/amihub/POWER_AGIYA_vrxh0e.png"
+            alt="OkuPower Product"
+            className="object-contain h-full w-full"
+            width={1260}
+            height={186}
+            priority
+          />
+        </section>
+
+        {/* right section */}
+        <section className="w-full sm:w-[40rem]">
+          {/* first section */}
+          <div className="flex items-center space-x-6 mb-10">
+            <div className="w-[5rem] sm:w-[10rem] h-fit bg-green-300 flex relative">
+              <h1 className="absolute -top-6">Tronix</h1>
+              <Image
+                src="./line1.svg"
+                alt="Line"
+                className="object-cover h-[3px] w-full"
+                width={100}
+                height={3}
+                priority
+              />
+            </div>
+            <h1 className="text-4xl text-[#0A8C55] font-bold">Power Ajiya</h1>
+          </div>
+          {/* second section */}
+          <p className="mb-5">
+            Our power bank is available in models of 10,000maH, 15,000maH and
+            30,000maH. The power bank incorporates advanced features such as
+            protection functions (OTP, OVP, OCP, VBUS, and Output Short
+            Protection) to ensure safety during charging and dscharging. it also
+            utilizes a smart algorithm for efficient charging and discharging at
+            the same time, along with DPM Function for dynamic power management
+            and Thermal regulation to prevent overheating.
+          </p>
+          {/* OkuPower image */}
+          <section className="sm:hidden flex-1 h-[20rem] bg-white mb-5">
+            <Image
+              src="https://res.cloudinary.com/dszhzezvt/image/upload/v1683565325/amihub/okupower_kbilri.png"
+              alt="OkuPower Product"
+              className="object-cover h-full w-full "
+              width={1260}
+              height={150}
+              priority
+            />
+          </section>
+          {/* why */}
+          <h1 className="mt-10 pb-3 font-bold">Why Power Ajiya</h1>
+          <div>
+            <div>• Advanced Safety Features</div>
+            <div>• Efficient Charging and Discharging.</div>
+            <div>• DPM Function for Dynamic Power Management.</div>
+          </div>
+          {/* product features */}
+          <h1 className="mt-10 pb-3 font-bold">Product Features</h1>
+          <div className="sm:flex  sm:space-x-6 space-y-6 sm:space-y-0">
+            <div className="sm:w-[50%]">
+              <div>• Protection Functions (OTP, OVP, OCP, VBUS).</div>
+            </div>
+            <div className="sm:w-[50%]">
+              <div>• Output short protection</div>
+              <div>• Thermal Regulation</div>
+              <div>• Dynamic Power Management.</div>
+            </div>
+          </div>
+        </section>
+      </section>
+      {/* end Power Ajiya */}
+
+      {/* start gaz meter */}
+      <section className="flex items-center justify-between px-6 py-9 lg:px-[5rem] sm:space-x-9">
+        {/* left section */}
+        <section className="w-full sm:w-[40rem]">
+          {/* first section */}
+          <div className="flex items-center space-x-6 mb-10">
+            <div className="w-[5rem] sm:w-[10rem] h-fit bg-green-300 flex relative">
+              <h1 className="absolute -top-6">Tronix</h1>
+              <Image
+                src="./line1.svg"
+                alt="Line"
+                className="object-cover h-[3px] w-full "
+                width={100}
+                height={3}
+                priority
+              />
+            </div>
+            <h1 className="text-4xl text-[#D20202] font-bold">Gaz Meter</h1>
+          </div>
+
+          {/* second section */}
+          <p className="mb-5">
+            Gaz Meter is a wireless digital gas metering system. This advanced
+            device offers precise gas consumption monitoring, high accuracy,
+            easy installation, strong and durable build designed to withstand
+            different environmental conditions and resistant to factors such as
+            dust, moisture, and other external elements. Our robust construction
+            ensures the longetivity and reliable performance of the gas meter
+            over an extended period, making it a dependable solution for gas
+            consumption monitoring. Compatible with various gas supply systems,
+            it empowers you to monitor and optimize your gas effectively. Stay
+            in control of your energy consumption with our reliable and
+            efficient gas meter.
+          </p>
+          {/* Gaz meter image */}
+          <section className="sm:hidden flex-1 h-[20rem] border border-gray-500 mb-5">
+            <Image
+              src="https://res.cloudinary.com/dszhzezvt/image/upload/v1689007877/amihub/GAZ_nwv7c2.png"
+              alt="Gaz meter"
+              className="object-contain h-full w-full "
+              width={1260}
+              height={186}
+              priority
+            />
+          </section>
+          {/* why */}
+          <h1 className="mt-10 pb-3 font-bold">Why Gaz Meter</h1>
+          <div>
+            <div>• Precise gas consumption monitoring.</div>
+            <div>• Easy Installation.</div>
+            <div>• Strong and Durable design.</div>
+            <div>• Resistant to factors such as dust and moisture.</div>
+          </div>
+        </section>
+
+        {/* right section */}
+        <section className="flex-1 h-[40rem] border border-gray-900">
+          <Image
+            src="https://res.cloudinary.com/dszhzezvt/image/upload/v1689007877/amihub/GAZ_nwv7c2.png"
+            alt="Gaz meter"
+            className="object-contain h-full w-full"
+            width={1260}
+            height={186}
+            priority
+          />
+        </section>
+      </section>
+      {/* end gaz meter */}
 
       {/* start our accomplishment */}
       <section className="space-y-10 px-6 lg:px-[5rem] py-9">
