@@ -868,9 +868,9 @@ export default function Home() {
           {/* OkuPower image */}
           <section className="sm:hidden flex-1 h-[20rem] bg-white mb-5">
             <Image
-              src="https://res.cloudinary.com/dszhzezvt/image/upload/v1683565325/amihub/okupower_kbilri.png"
-              alt="OkuPower Product"
-              className="object-cover h-full w-full "
+              src="https://res.cloudinary.com/dszhzezvt/image/upload/v1689007877/amihub/POWER_AGIYA_vrxh0e.png"
+              alt="Power Ajiya Product"
+              className="object-contain h-full w-full "
               width={1260}
               height={150}
               priority
