@@ -26,6 +26,7 @@ import GazMeter from "./components/hero/GazMeter";
 export default function Home() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [toggleWaitlist, setToggleWaitlist] = useState(false);
   const dropdownRef = useRef(null);
 
   const progressCircle = useRef(null);
@@ -1123,6 +1124,42 @@ export default function Home() {
         <WhatWeDo isMobile={isMobile} />
       </section>
       {/* end what we do */}
+
+      {/* start wait list */}
+      <section className="px-6 lg:px-[5rem] py-[4rem] space-y-6">
+        <h1 className="text-center text-4xl">Join our waitlist</h1>
+        <p className="text-center mx-auto  w-[30rem]">
+          Join the train of over 1000 early adopters actively waiting for our
+          products. Be the first to know when we hit the market
+        </p>
+        <div className="w-fit mx-auto">
+          <button
+            className="w-fit py-4 px-6 mt-4 border border-[#377EAF] text-[#377EAF] rounded-md"
+            onClick={() => setToggleWaitlist(!toggleWaitlist)}
+          >
+            Join Now
+          </button>
+        </div>
+        {/* waitlist form */}
+        {toggleWaitlist && (
+          <div
+            className="mx-auto w-fit
+        "
+          >
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSfYeUIv1XAqO8lHwAcV-dleQO9CxjDZo8iA6Rloswacf_sYMw/viewform?embedded=true"
+              width="640"
+              height="936"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+            >
+              Loading…
+            </iframe>
+          </div>
+        )}
+      </section>
+      {/* end wait list */}
 
       {/* start team */}
       <section className="bg-[#EBE9E9] h-[740vh] sm:h-[280vh] px-6 lg:px-[5rem]">
