@@ -149,7 +149,7 @@ export default function Home() {
         <h1 className="font-bold">
           <Image src="/logo.svg" alt="Logo" width={200} height={90} priority />
           <h2 className="-mt-4 text-blue-900 leading-4">
-            Developing Africa's Technology Solution
+            {'Developing Africa"s Technology Solution'}
           </h2>
         </h1>
 
@@ -333,7 +333,7 @@ export default function Home() {
 
           {/* our mission second section */}
           <p className="mb-5">
-            We are developing Africa's top-quality products and services through
+            We are developing Africas top-quality products and services through
             robust incubation, acceleration, trade and investment oppurtunities
             to deliver global solutions
           </p>
