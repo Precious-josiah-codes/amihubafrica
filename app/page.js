@@ -333,9 +333,9 @@ export default function Home() {
 
           {/* our mission second section */}
           <p className="mb-5">
-            We are developing Africas top-quality products and services through
-            robust incubation, acceleration, trade and investment oppurtunities
-            to deliver global solutions
+            {
+              "We are developing Africa's top-quality products and services through robust incubation, acceleration, trade and investment oppurtunities to deliver global solutions"
+            }
           </p>
 
           {/* our vision first section */}
